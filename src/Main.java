@@ -72,6 +72,7 @@ public class Main {
 
             }
         }
+        //finalização do app
         System.out.println("Encerrando...");
         System.out.println("\nObrigado por usar nossos serviços!");
 
