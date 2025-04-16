@@ -16,7 +16,7 @@ public class Main {
         String tipoDeConta = leitura.nextLine();
 
         System.out.print("Saldo em Conta: ");
-        double saldo = leitura.nextInt();
+        double saldo = leitura.nextDouble();
 
         System.out.println();
         System.out.println("--------------------------------------");
@@ -48,7 +48,7 @@ public class Main {
             //receber valor
             } else if (operacoes == 2) {
                 System.out.print("\nInforme o valor a receber: ");
-                double receber = leitura.nextInt();
+                double receber = leitura.nextDouble();
 
                 System.out.println("\nSaldo Recebido!");
                 System.out.println("Saldo atualizado R$ " + (saldo += receber));
@@ -56,7 +56,7 @@ public class Main {
             //tranferir valor
             } else if (operacoes == 3) {
                 System.out.print("Informe o valor que deseja transferir: ");
-                double transferir = leitura.nextInt();
+                double transferir = leitura.nextDouble();
 
                 if (transferir > saldo) {
                     System.out.println("\nSaldo Insuficiente.");
